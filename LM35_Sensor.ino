@@ -1,8 +1,8 @@
 // Program to use a LM35 temperature's sensor with Arduino //
 
-const float voltage_reference = 5;
-const int LM35 = A3;
-float temperature;
+const float voltage_reference = 5;      // used to change the reference's voltage, could be changed depending of the board used
+const int LM35 = A3;                    // sensor pin
+float temperature;                      // temperature variable
 
 void setup() {
   Serial.begin(9600);
